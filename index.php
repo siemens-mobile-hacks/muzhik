@@ -8,6 +8,18 @@
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="bower_components/emoji-rain/emoji-rain.html">
     <style>
+        @font-face {
+            font-family: emoji;
+
+            src: local('Apple Color Emoji'),
+            local('Android Emoji'),
+            local('Segoe UI'),
+            local(EmojiSymbols),
+            local(Symbola);
+
+            /* Emoji unicode blocks */
+            unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
+        }
         html, body {
             margin: 0;
             height: 100%;
@@ -27,6 +39,7 @@
             justify-content: center;
         }
         #man {
+            font-family: emoji;
             font-size:40vh;
             cursor: pointer;
         }
