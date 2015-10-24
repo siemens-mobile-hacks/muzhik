@@ -40,7 +40,7 @@
         }
         #man {
             font-family: emoji;
-            font-size:40vh;
+            font-size:90px;
             cursor: pointer;
 
         }
