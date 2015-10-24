@@ -13,6 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "emoji-rain": "git@github.com:perk11/emoji-rain.git#570d5cdaeefcf83620390a6d962da5c443aed784"
+    "emoji-rain": "git://github.com/perk11/emoji-rain.git#570d5cdaeefcf83620390a6d962da5c443aed784"
   }
 }
