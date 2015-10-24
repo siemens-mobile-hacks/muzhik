@@ -8,22 +8,15 @@
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="bower_components/emoji-rain/emoji-rain.html">
     <style>
-        @font-face {
-            font-family: emoji;
-
-            src: local('Apple Color Emoji'),
-            local('Android Emoji'),
-            local('Segoe UI'),
-            local(EmojiSymbols),
-            local(Symbola);
-
-            /* Emoji unicode blocks */
-            unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
-        }
         html, body {
             margin: 0;
             height: 100%;
             width: 100%;
+        }
+        body {
+            z-index: -2;
+            background-image: url("/sky.jpg");
+            background-size: cover;
         }
         main {
             height: 100%;
@@ -37,12 +30,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        #man {
-            font-family: emoji;
-            font-size:90px;
-            cursor: pointer;
 
+        }
+        #prognoz {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            border-radius: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            font-size: 48px;
+            padding: 15px 25px 15px 25px;
+            border: solid #1f628d 2px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #prognoz:hover {
+             background: #3cb0fd;
+             background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+             background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+             background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+             background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+             background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+             text-decoration: none;
         }
     </style>
     <script>
@@ -61,7 +74,7 @@
 </head>
 <body>
 <main>
-    <div id="man" onclick="initMen()">&#128104;</div>
+    <div id="prognoz" onclick="initMen()">Узнать прогноз погоды</div>
 </main>
 <emoji-rain id="rain"></emoji-rain>
 
