@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Дождь из мужиков</title>
+    <title>☔</title>
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="bower_components/emoji-rain/emoji-rain.html">
     <style>
