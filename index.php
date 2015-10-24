@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Дождь из мужиков</title>
-	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 	<link rel="import" href="bower_components/emoji-rain/emoji-rain.html">
 	<meta charset="utf-8">
 </head>
