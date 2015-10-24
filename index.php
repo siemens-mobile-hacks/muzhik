@@ -42,6 +42,7 @@
             font-family: emoji;
             font-size:40vh;
             cursor: pointer;
+
         }
     </style>
     <script>
@@ -60,7 +61,7 @@
 </head>
 <body>
 <main>
-    <div id="man" onclick="initMen()">👨</div>
+    <div id="man" onclick="initMen()">&#128104;</div>
 </main>
 <emoji-rain id="rain"></emoji-rain>
 
