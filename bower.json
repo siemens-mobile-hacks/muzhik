@@ -1,0 +1,18 @@
+{
+  "name": "muzhik",
+  "authors": [
+    "Konstantin Pereyaslov <perk11@perk11.info>"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "emoji-rain": "git@github.com:perk11/emoji-rain.git#570d5cdaeefcf83620390a6d962da5c443aed784"
+  }
+}
