@@ -10,7 +10,13 @@
         dozhd.addEventListener('ended', function() {
             this.currentTime = 0;
             this.play();
-        }, false)
+        }, false);
+        document.addEventListener('click', function () {
+            // Start playing audio when the user clicks anywhere on the page,
+            // to force Mobile Safari to load the audio.
+            document.removeEventListener('click', arguments.callee, false);
+            dozhd.play();
+        }, false);
     </script>
 	<meta charset="utf-8">
 </head>
