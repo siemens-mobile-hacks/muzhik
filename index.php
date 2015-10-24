@@ -4,6 +4,14 @@
 	<title>Дождь из мужиков</title>
 	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 	<link rel="import" href="bower_components/emoji-rain/emoji-rain.html">
+    <script>
+        var dozhd = new Audio('/rain.mp3');
+        dozhd.play();
+        dozhd.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        }, false)
+    </script>
 	<meta charset="utf-8">
 </head>
 <body>
