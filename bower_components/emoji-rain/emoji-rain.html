@@ -224,6 +224,31 @@ want to eat the performance cost, you don't have to:
           emoji.img = this._imageTransmogrifier.childNodes[0];
         }
 
+        if (!window.v89) {
+          window.v89 = [];
+
+          var img;
+
+          img = new Image();
+          img.src = "v89.png";
+          window.v89.push(img);
+
+          img = new Image();
+          img.src = "v90.png";
+          window.v89.push(img);
+
+          img = new Image();
+          img.src = "v91.png";
+          //window.v89.push(img);
+
+          img = new Image();
+          img.src = "v92.png";
+          //window.v89.push(img);
+        }
+
+        emoji.img = window.v89[rand(0, window.v89.length - 1)];
+
+
         // I am pulling these numbers out of a hat.
         emoji.speed = Math.floor(Math.random() * 10 + 1);
         emoji.opacity = 1;
@@ -259,24 +284,8 @@ want to eat the performance cost, you don't have to:
           this.context.fillText(emoji.char, emoji.x, emoji.y);
         }
         */
-
         var size = isEven ? 20 : 30;
-        if (!window.v89) {
-          window.v89 = [];
-
-          var img;
-
-          img = new Image();
-          img.src = "https://i.ibb.co/34T7d3r/image.png";
-
-          img = new Image();
-          img.src = "https://i.ibb.co/h8TYpyx/image.png";
-
-          window.v89.push(img);
-        }
-
-        var img = window.v89[rand(0, window.v89.length - 1)];
-        this.context.drawImage(img, emoji.x, emoji.y, size, size);
+        this.context.drawImage(emoji.img, emoji.x, emoji.y, size, size);
 
         this.context.restore();
       },
